@@ -1,0 +1,13 @@
+{
+    "name": "rb-cohen/php-env",
+    "description": "Envrionment variable helper",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arron Woods",
+            "email": "me@arronwoods.com"
+        }
+    ],
+    "require": {}
+}
