@@ -9,5 +9,13 @@
             "email": "me@arronwoods.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+      "files": [
+        "src/PhpEnv/helpers.php"
+      ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    }
 }
