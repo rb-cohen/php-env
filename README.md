@@ -10,6 +10,11 @@ Looks for an environment variable called `$name`, returning `$default` if the va
 
 Strings 'true', 'false' and 'null' will be converted to their PHP types `true`, `false` and `null`.
 
+### env_to_array($name, $default = array())
+Similar to env, calls env internally, but will split the env variable or default value in to an array by comma.
+
+Also trims the array values.
+
 ### resolve_value($value)
 
 Used by `env()` to recursively call anonymous functions to resolve a value if the variable is not set.
