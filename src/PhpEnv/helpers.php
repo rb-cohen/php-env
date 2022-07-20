@@ -21,6 +21,19 @@ if(!function_exists('env')){
     }
 }
 
+if(!function_exists('env_to_array')){
+    function env_to_array($name, $default = array()){
+        $value = env($name, $default);
+
+        if(is_array($value)){
+            return $value;
+        }
+
+        $values = explode(',', $value);
+        return array_map('trim', $values);
+    }
+}
+
 if(!function_exists('resolve_value')){
     function resolve_value($value){
         if(is_callable($value)){
